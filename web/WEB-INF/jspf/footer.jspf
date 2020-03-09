@@ -1,0 +1,27 @@
+<!-- any content can be specified here e.g.: -->
+<%@ page pageEncoding="UTF-8" %>
+<footer style="text-align: center">
+    <b class="titulo"> Desenvolvido por: </b><br> 
+    <p class="txt">Anna Carolina Menezes Rodrigues Hermenegildo | Daniel Alves | Danilo Hernandes | Erick Luiseto | Gabriel Bocchino | Marcelo Salustiano Silva</p>
+</footer>
+<style>
+    *{
+        margin: 0px;
+    }
+    .titulo{
+        font-size: 20px;
+    }
+    footer{
+        height: 80px;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        border-top: 1px solid #000;
+        padding-top: 10px;
+        color: black;
+
+    }
+    .txt{
+        font-size: 15px;
+    }
+</style>

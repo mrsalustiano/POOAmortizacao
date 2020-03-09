@@ -1,0 +1,71 @@
+<!-- any content can be specified here e.g.: -->
+<%@ page pageEncoding="UTF-8" %>
+<div class="menu" style="text-align: center">
+    <div id="inicio" class='styled'> <span>Inicio</span></div>
+    <div id="constante" class='styled'>  <span>Amortização Constante</span> </div>
+    <div id="americana" class='styled'> <span>Amortização Americana</span></div>
+    <div id="tabela_price" class='styled'>  <span>Tabela Price</span> </div>
+
+</div>
+<script>
+    document.getElementById('inicio').addEventListener('click', function (event) {
+        document.location.href = '/amortizacoes/index.jsp';
+    });
+    document.getElementById('constante').addEventListener('click', function (event) {
+        document.location.href = '/amortizacoes/amortizacao-constante.jsp';
+    });
+    document.getElementById('americana').addEventListener('click', function (event) {
+        document.location.href = '/amortizacoes/amortizacao-americana.jsp';
+    });
+    document.getElementById('tabela_price').addEventListener('click', function (event) {
+        document.location.href = '/amortizacoes/tabela-price.jsp';
+    });
+</script>
+<style>
+
+    .menu{
+        display: flex; justify-content: space-between;  flex-wrap: wrap;  
+        padding: 5px 60px;
+        /*        background: white;*/
+        color: black;
+    }
+
+    .item {
+        border: 1px solid black;
+        padding: 8px 12px;
+        background-color: white;
+        box-shadow: 2px 6px 13px rgba(46, 61, 73, 0.4);
+        width: 20%;
+        border-radius: 3px;
+    }
+    .styled {
+        border: 0;
+        line-height: 1.8;
+        padding: 8px 12px;
+      
+        text-align: center;
+        align-content: center;
+        color: #fff;
+        text-shadow: 2px 6px 13px #000;
+        border-radius: 10px;
+        width: 20%;
+        background-color: rgba(0, 153, 204, 1);
+        background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+    }
+
+    .styled:hover {
+        background-color: rgba(0, 0, 153, 1);
+    }
+
+    .styled:active {
+        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+    }
+
+
+</style>
